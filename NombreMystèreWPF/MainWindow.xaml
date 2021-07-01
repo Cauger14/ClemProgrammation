@@ -15,7 +15,7 @@
             </StackPanel>
             <TextBlock Text="Trouve le Nombre mystère entre 1 et 20 !" FontFamily="Ink Free" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="textBlockInfo"/>
-            <TextBlock x:Name="textBlockNbEssais" Text="Nombre d'essai: 0" FontFamily="Unispace" FontWeight="Normal" FontStyle="Italic"/>
+            <TextBlock x:Name="textBlockNbEssais" Text="Nombre d'essai : 0" FontFamily="Unispace" FontWeight="Normal" FontStyle="Italic"/>
             <TextBox x:Name="textBoxEssai"/>
             <Button x:Name="btnValider" Content="Valider" Click="btnValider_Click" Background="#FFE25FFF"/>
             <Button x:Name="btnNouvellePartie" Content="Nouvelle Partie" Click="btnNouvellePartie_Click"/>
