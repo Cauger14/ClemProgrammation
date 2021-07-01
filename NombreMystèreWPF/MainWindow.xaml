@@ -1,0 +1,24 @@
+﻿<Window x:Class="NombreMystèreWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NombreMystèreWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="523" Width="525" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid x:Name="Base" Margin="12" Background="#FF7D2491">
+        <StackPanel>
+            <StackPanel x:Name="Logo" Height="90" Background="#FF5454FF" d:IsLocked="True">
+                <TextBlock TextWrapping="Wrap" Background="#FF5454FF" FontSize="48" FontFamily="Arial Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="0,12,30,0" TextAlignment="Right"><Run Language="fr-fr" Text="Nombre Mystère"/></TextBlock>
+                <Rectangle x:Name="Séparateur_blanc" Height="5" Fill="White" Width="501" Margin="0,5,0,0"/>
+                <Rectangle x:Name="Séparateur_noir" Height="12" Fill="Black" Width="501" VerticalAlignment="Stretch" Margin="0,5,0,0"/>
+            </StackPanel>
+            <TextBlock Text="Trouve le Nombre mystère entre 1 et 20 !" FontFamily="Ink Free" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="textBlockInfo"/>
+            <TextBlock x:Name="textBlockNbEssais" Text="Nombre d'essai: 0" FontFamily="Unispace" FontWeight="Normal" FontStyle="Italic"/>
+            <TextBox x:Name="textBoxEssai"/>
+            <Button x:Name="btnValider" Content="Valider" Click="btnValider_Click" Background="#FFE25FFF"/>
+            <Button x:Name="btnNouvellePartie" Content="Nouvelle Partie" Click="btnNouvellePartie_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
