@@ -6,7 +6,7 @@ namespace QuestionRéponse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Qui êtes-vous ?");
+            Console.WriteLine("Comment vous appelez-vous ?");
 
             String réponse = Console.ReadLine();
 
@@ -19,7 +19,7 @@ namespace QuestionRéponse
             const string A = ", tu as ";
             Console.WriteLine(réponse + A + âge.ToString());
 
-            if (âge < 20)
+            if (âge < 24)
             {
                 Console.WriteLine("Oh ! On a le même âge ! " + réponse);
             }
